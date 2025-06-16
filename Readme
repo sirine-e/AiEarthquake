@@ -1,0 +1,12 @@
+- lancer le docker engine
+
+Sur machine unix :
+- ./go
+- docker compose up
+- aller à http://localhost:8080
+
+Sur machine windows (powershell) :
+- Unblock-File -Path .\go.ps1
+- .\go.ps1
+- docker compose up 
+- aller à http://localhost:8080

@@ -1,0 +1,18 @@
+services:
+  ia:
+    image: ia
+    container_name: ia
+    networks:
+      - nw
+
+  app:
+    image: app
+    container_name: app
+    networks:
+      - nw
+    ports:
+      - "8080:8080"
+networks:
+   nw:
+      driver: bridge
+
